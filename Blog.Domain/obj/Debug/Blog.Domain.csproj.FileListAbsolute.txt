@@ -1,0 +1,10 @@
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Domain\bin\Debug\Blog.Domain.dll
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Domain\bin\Debug\Blog.Domain.pdb
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Domain\obj\Debug\Blog.Domain.csprojResolveAssemblyReference.cache
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Domain\obj\Debug\Blog.Domain.dll
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Domain\obj\Debug\Blog.Domain.pdb
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Domain\bin\Debug\Blog.Domain.dll
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Domain\bin\Debug\Blog.Domain.pdb
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Domain\obj\Debug\Blog.Domain.csprojResolveAssemblyReference.cache
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Domain\obj\Debug\Blog.Domain.dll
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Domain\obj\Debug\Blog.Domain.pdb

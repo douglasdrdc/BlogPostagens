@@ -1,0 +1,13 @@
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Application\bin\Debug\Blog.Application.dll
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Application\bin\Debug\Blog.Application.pdb
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.dll
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.pdb
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Application\bin\Debug\Blog.Domain.dll
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Application\bin\Debug\Blog.Domain.pdb
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\bin\Debug\Blog.Application.dll
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\bin\Debug\Blog.Application.pdb
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\bin\Debug\Blog.Domain.dll
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\bin\Debug\Blog.Domain.pdb
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.dll
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.pdb
+C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.csprojResolveAssemblyReference.cache
