@@ -17,8 +17,8 @@ namespace Blog.Infra.Data.Mongo.Repositories
 
         public RepositoryBase()
         {
-            _client = new MongoClient(@"mongodb://localhost/");
-            _database = _client.GetDatabase("dbBlog");
+            _client = new MongoClient(Util.Util.MongoClientConnection);
+            _database = _client.GetDatabase(Util.Util.MongoDataBase);
             _collection = _database.GetCollection<TEntity>(typeof(TEntity).Name);
         }
 

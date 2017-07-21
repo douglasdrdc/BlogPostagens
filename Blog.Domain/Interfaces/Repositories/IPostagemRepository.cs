@@ -7,8 +7,14 @@ using System.Threading.Tasks;
 
 namespace Blog.Domain.Interfaces.Repositories
 {
-    public interface IPostagemRepository : IRepositoryBase<Postagem>
+    public interface IPostagemRepository // : IRepositoryBase<Postagem>
     {
+        void Add(Postagem obj);
+
+        Postagem GetById(string id);
+
+        IEnumerable<Postagem> GetAll();
+
 
     }
 }

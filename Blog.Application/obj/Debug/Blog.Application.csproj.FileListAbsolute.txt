@@ -11,3 +11,4 @@ C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\bin\Debug\Blog.Domain.pd
 C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.dll
 C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.pdb
 C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.csprojResolveAssemblyReference.cache
+C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.csprojResolveAssemblyReference.cache
