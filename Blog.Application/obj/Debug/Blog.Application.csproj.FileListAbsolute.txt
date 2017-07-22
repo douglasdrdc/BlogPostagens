@@ -12,3 +12,12 @@ C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\obj\Debug\Blog.Applicati
 C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.pdb
 C:\Users\dougl\Downloads\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.csprojResolveAssemblyReference.cache
 C:\Douglas\ProjetosGIT\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.csprojResolveAssemblyReference.cache
+D:\ProjetosGit\BlogPostagens\Blog.Application\bin\Debug\Blog.Application.dll
+D:\ProjetosGit\BlogPostagens\Blog.Application\bin\Debug\Blog.Application.pdb
+D:\ProjetosGit\BlogPostagens\Blog.Application\bin\Debug\Blog.Domain.dll
+D:\ProjetosGit\BlogPostagens\Blog.Application\bin\Debug\Blog.Domain.pdb
+D:\ProjetosGit\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.csprojResolveAssemblyReference.cache
+D:\ProjetosGit\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.dll
+D:\ProjetosGit\BlogPostagens\Blog.Application\obj\Debug\Blog.Application.pdb
+D:\ProjetosGit\BlogPostagens\Blog.Application\bin\Debug\MongoDB.Bson.dll
+D:\ProjetosGit\BlogPostagens\Blog.Application\bin\Debug\MongoDB.Bson.xml

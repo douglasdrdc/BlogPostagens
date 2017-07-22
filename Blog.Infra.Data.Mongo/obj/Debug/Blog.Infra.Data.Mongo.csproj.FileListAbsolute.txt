@@ -26,3 +26,17 @@ C:\Users\dougl\Downloads\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\MongoDB.D
 C:\Users\dougl\Downloads\BlogPostagens\Blog.Infra.Data.Mongo\obj\Debug\Blog.Infra.Data.Mongo.csprojResolveAssemblyReference.cache
 C:\Users\dougl\Downloads\BlogPostagens\Blog.Infra.Data.Mongo\obj\Debug\Blog.Infra.Data.Mongo.dll
 C:\Users\dougl\Downloads\BlogPostagens\Blog.Infra.Data.Mongo\obj\Debug\Blog.Infra.Data.Mongo.pdb
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\obj\Debug\Blog.Infra.Data.Mongo.csprojResolveAssemblyReference.cache
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\obj\Debug\Blog.Infra.Data.Mongo.dll
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\obj\Debug\Blog.Infra.Data.Mongo.pdb
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\Blog.Infra.Data.Mongo.dll
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\Blog.Infra.Data.Mongo.pdb
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\Blog.Domain.dll
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\MongoDB.Bson.dll
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\MongoDB.Driver.Core.dll
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\MongoDB.Driver.dll
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\Blog.Domain.pdb
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\MongoDB.Bson.xml
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\MongoDB.Driver.xml
+D:\ProjetosGit\BlogPostagens\Blog.Infra.Data.Mongo\bin\Debug\MongoDB.Driver.Core.xml
