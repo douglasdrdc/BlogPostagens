@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.1.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.1.1\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MongoDB.Bson, Version=2.4.4.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Moq, Version=4.7.99.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.7.99\lib\net45\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -106,6 +115,18 @@
     <ProjectReference Include="..\Blog.API\Blog.API.csproj">
       <Project>{FA14694E-75EA-4008-9F88-925A85E37B77}</Project>
       <Name>Blog.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blog.Application\Blog.Application.csproj">
+      <Project>{AE013CD8-35B2-4245-965D-E7120A11C40F}</Project>
+      <Name>Blog.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blog.Domain\Blog.Domain.csproj">
+      <Project>{BC097449-6ADD-4F59-9576-03A1376CCE7A}</Project>
+      <Name>Blog.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blog.Infra.Data.Mongo\Blog.Infra.Data.Mongo.csproj">
+      <Project>{3D8A797B-3A57-4867-A206-71C823D92385}</Project>
+      <Name>Blog.Infra.Data.Mongo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

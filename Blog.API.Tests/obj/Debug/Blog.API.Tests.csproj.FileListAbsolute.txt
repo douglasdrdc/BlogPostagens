@@ -147,7 +147,6 @@ D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Ninject.dll
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Ninject.Web.WebApi.dll
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Blog.Infra.Data.Mongo.dll
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\MongoDB.Driver.dll
-D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\MongoDB.Bson.dll
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\MongoDB.Driver.Core.dll
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Blog.API.pdb
@@ -168,9 +167,13 @@ D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Ninject.Web.Common.xml
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Ninject.xml
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Ninject.Web.WebApi.xml
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Blog.Infra.Data.Mongo.pdb
-D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\MongoDB.Driver.xml
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\MongoDB.Bson.xml
+D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\MongoDB.Driver.xml
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\MongoDB.Driver.Core.xml
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\obj\Debug\Blog.API.Tests.csprojResolveAssemblyReference.cache
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\obj\Debug\Blog.API.Tests.dll
 D:\ProjetosGit\BlogPostagens\Blog.API.Tests\obj\Debug\Blog.API.Tests.pdb
+D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Castle.Core.dll
+D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Moq.dll
+D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Moq.pdb
+D:\ProjetosGit\BlogPostagens\Blog.API.Tests\bin\Debug\Moq.xml

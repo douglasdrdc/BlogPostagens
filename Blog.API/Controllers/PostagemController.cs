@@ -19,45 +19,64 @@ namespace Blog.API.Controllers
         {
             this._postagemApp = postagemApp;
         }
-
-        // GET: api/Postagem
+                
         public IEnumerable<Postagem> Get()
-        {
-            IEnumerable<Postagem> postagemCollection = this._postagemApp.GetAll();            
-            return postagemCollection;
-        }
-
-        // GET: api/Postagem/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST: api/Postagem
-        public HttpResponseMessage Post([FromUri] Postagem value)
         {
             try
             {
-                value.DataCadastro = DateTime.Now.AddDays(-3);
-                value.Titulo = "Concurso Público";
-                value.Subtitulo = "Foi realizada a abertura das vendas destes ingressos";
-                value.Texto = "É um fato conhecido ...";
+                IEnumerable<Postagem> postagemCollection = this._postagemApp.GetAll();
+                return postagemCollection;
+                
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no processo de consulta.", ex);
+            }            
+        }
+                
+        public Postagem Get(string id)
+        {
+            try
+            {
+                Postagem postagem = this._postagemApp.GetById(id);
+                return postagem;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no processo de consulta.", ex);
+            }            
+        }
+                
+        public Postagem Post([FromUri] Postagem value)
+        {
+            try
+            {
+                if (value == null)
+                    throw new Exception("Parâmetro de entrada inválido nulo.");
 
+                this._postagemApp.IsValid(value);
                 this._postagemApp.Add(value);
-                return new HttpResponseMessage(HttpStatusCode.Accepted);
+                return value;
             }
             catch (Exception ex)
             {
                 throw ex;
             }
         }
-
-        // PUT: api/Postagem/5
-        public void Put(int id, [FromBody]string value)
+                
+        public HttpResponseMessage Put([FromUri] Postagem value)
         {
+            try
+            {
+                this._postagemApp.Update(value);
+                return new HttpResponseMessage(HttpStatusCode.OK);
+            }
+            catch (Exception ex)
+            {
+                return new HttpResponseMessage(HttpStatusCode.InternalServerError);
+            }
         }
-
-        // DELETE: api/Postagem/5
+                
         public void Delete(int id)
         {
         }
