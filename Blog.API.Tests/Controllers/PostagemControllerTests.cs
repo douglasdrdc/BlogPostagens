@@ -15,10 +15,10 @@ namespace Blog.API.Controllers.Tests
     [TestClass()]
     public class PostagemControllerTests
     {
-        private PostagemController _controller;        
+        private PostagemController _controller;
         private Postagem _postagem;
 
-        [TestInitialize]
+        [TestInitialize()]
         public void Initialize()
         {
             var repository = new Blog.Infra.Data.Mongo.Repositories.PostagemRepository();
@@ -32,33 +32,31 @@ namespace Blog.API.Controllers.Tests
                 Subtitulo = "Teste Subtitulo Postagem",
                 Texto = "Teste Texto Postagem",
                 DataCadastro = DateTime.Now.Date
-            };            
+            };
         }
-        
+
+        #region Post
+
         [TestMethod()]
         public void PermitirInclusaoDeNovaPostagemValida()
         {
             try
-            {                 
+            {
                 _postagem = _controller.Post(_postagem);
+                var postagemGet = _controller.Get(_postagem.PostagemId.ToString());
+                Assert.AreEqual(_postagem.PostagemId, postagemGet.PostagemId);
             }
             catch (Exception ex)
             {
                 Assert.Fail(string.Format("Era esperado a inclusão com sucesso porem ocorreu uma Exception. {0}", ex.Message));
             }
-
-            if (string.IsNullOrEmpty(_postagem.PostagemId.ToString()))
-                Assert.Fail("Era esperado a inclusão com sucesso porem não retornou id.");
-            else if (string.Equals(_postagem.PostagemId.ToString(), "000000000000000000000000"))
-                Assert.Fail("Era esperado a inclusão com sucesso porem retornou id zero.");
-            
         }
 
         [TestMethod()]
         public void NaoPermitirInclusaoDeNovaPostagemNula()
         {
             try
-            {                
+            {
                 _controller.Post(null);
                 Assert.Fail("Era esperado uma exceção referente a entrada inválido nulo.");
             }
@@ -72,10 +70,9 @@ namespace Blog.API.Controllers.Tests
         public void NaoPermitirInclusaoDeNovaPostagemSemTitulo()
         {
             try
-            {
-                var postagem = _postagem;
-                postagem.Titulo = string.Empty;
-                _controller.Post(postagem);
+            {                
+                _postagem.Titulo = string.Empty;
+                _controller.Post(_postagem);
                 Assert.Fail("Era esperado uma exceção referente ao título não informado.");
             }
             catch (Exception ex)
@@ -88,10 +85,9 @@ namespace Blog.API.Controllers.Tests
         public void NaoPermitirInclusaoDeNovaPostagemSemSubtitulo()
         {
             try
-            {
-                var postagem = _postagem;
-                postagem.Subtitulo = string.Empty;
-                _controller.Post(postagem);
+            {                
+                _postagem.Subtitulo = string.Empty;
+                _controller.Post(_postagem);
                 Assert.Fail("Era esperado uma exceção referente ao Subtítulo não informado.");
             }
             catch (Exception ex)
@@ -104,10 +100,9 @@ namespace Blog.API.Controllers.Tests
         public void NaoPermitirInclusaoDeNovaPostagemSemTexto()
         {
             try
-            {
-                var postagem = _postagem;
-                postagem.Texto = string.Empty;
-                _controller.Post(postagem);
+            {   
+                _postagem.Texto = string.Empty;
+                _controller.Post(_postagem);
                 Assert.Fail("Era esperado uma exceção referente ao Texto não informado.");
             }
             catch (Exception ex)
@@ -121,9 +116,8 @@ namespace Blog.API.Controllers.Tests
         {
             try
             {
-                var postagem = _postagem;
-                postagem.DataCadastro = DateTime.MinValue;
-                _controller.Post(postagem);
+                _postagem.DataCadastro = DateTime.MinValue;
+                _controller.Post(_postagem);
                 Assert.Fail("Era esperado uma exceção referente a Data de Cadastro não informada.");
             }
             catch (Exception ex)
@@ -137,9 +131,8 @@ namespace Blog.API.Controllers.Tests
         {
             try
             {
-                var postagem = _postagem;
-                postagem.DataCadastro = DateTime.Now.AddDays(-2);
-                _controller.Post(postagem);
+                _postagem.DataCadastro = DateTime.Now.AddDays(-2);
+                _controller.Post(_postagem);
                 Assert.Fail("Era esperado uma exceção referente a Data de Cadastro inválida.");
             }
             catch (Exception ex)
@@ -148,5 +141,7 @@ namespace Blog.API.Controllers.Tests
             }
         }
 
+        #endregion
+        
     }
 }

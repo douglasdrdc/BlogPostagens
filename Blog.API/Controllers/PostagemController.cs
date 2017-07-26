@@ -68,6 +68,7 @@ namespace Blog.API.Controllers
         {
             try
             {
+                this._postagemApp.IsValid(value);
                 this._postagemApp.Update(value);
                 return new HttpResponseMessage(HttpStatusCode.OK);
             }
