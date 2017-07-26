@@ -9,6 +9,6 @@ namespace Blog.Domain.Interfaces.Services
 {
     public interface IPostagemService : IServiceBase<Postagem>
     {
-
+        void IsValid(Postagem obj);
     }
 }

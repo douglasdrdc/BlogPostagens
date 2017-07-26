@@ -19,7 +19,9 @@ namespace Blog.Application
             _postagemService = postagemService;
         }
 
-
-
+        public void IsValid(Postagem obj)
+        {
+            _postagemService.IsValid(obj);
+        }
     }
 }

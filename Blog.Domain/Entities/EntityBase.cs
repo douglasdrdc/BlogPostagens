@@ -8,7 +8,7 @@ namespace Blog.Domain.Entities
 {
     public class EntityBase
     {
-        public virtual void Validar()
+        public virtual void IsValid()
         {
         }
     }

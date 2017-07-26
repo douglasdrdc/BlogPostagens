@@ -19,5 +19,9 @@ namespace Blog.Domain.Services
             _postagemRepository = postagemRepository;
         }
 
+        public void IsValid(Postagem obj)
+        {
+            obj.IsValid();
+        }
     }
 }
