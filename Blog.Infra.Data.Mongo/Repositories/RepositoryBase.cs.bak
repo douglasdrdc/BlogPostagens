@@ -25,14 +25,7 @@ namespace Blog.Infra.Data.Mongo.Repositories
 
         public TEntity GetById(string id)
         {
-            if (string.IsNullOrEmpty(id))
-                return null;
-
-            ObjectId idConvert;
-            if (!ObjectId.TryParse(id, out idConvert))
-                throw new ApplicationException("O id informado não possui o formato correto. Não foi possível converter a string informada para um ObjectId.");
-
-            var filter = Builders<TEntity>.Filter.Eq("_id", idConvert);
+            var filter = Builders<TEntity>.Filter.Eq("_id", ObjectId.Parse(id));
             return _collection.Find(filter).First<TEntity>();
         }
 

@@ -41,10 +41,6 @@ namespace Blog.API.Controllers
                 Postagem postagem = this._postagemApp.GetById(id);
                 return postagem;
             }
-            catch (ApplicationException ex)
-            {
-                throw ex;
-            }
             catch (Exception ex)
             {
                 throw new Exception("Erro no processo de consulta.", ex);
