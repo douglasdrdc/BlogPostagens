@@ -201,7 +201,6 @@ D:\ProjetosGit\BlogPostagens\Blog.API\bin\System.Web.WebPages.dll
 D:\ProjetosGit\BlogPostagens\Blog.API\bin\System.Web.WebPages.Razor.dll
 D:\ProjetosGit\BlogPostagens\Blog.API\bin\WebActivatorEx.dll
 D:\ProjetosGit\BlogPostagens\Blog.API\bin\WebGrease.dll
-D:\ProjetosGit\BlogPostagens\Blog.API\bin\MongoDB.Bson.dll
 D:\ProjetosGit\BlogPostagens\Blog.API\bin\MongoDB.Driver.dll
 D:\ProjetosGit\BlogPostagens\Blog.API\bin\MongoDB.Driver.Core.dll
 D:\ProjetosGit\BlogPostagens\Blog.API\bin\System.Runtime.InteropServices.RuntimeInformation.dll

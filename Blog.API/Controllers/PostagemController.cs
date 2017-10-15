@@ -1,5 +1,4 @@
-﻿using Blog.API.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -19,53 +18,70 @@ namespace Blog.API.Controllers
         {
             this._postagemApp = postagemApp;
         }
-                
-        public IEnumerable<Postagem> Get()
+
+        public HttpResponseMessage Get()
         {
             try
             {
                 IEnumerable<Postagem> postagemCollection = this._postagemApp.GetAll();
-                return postagemCollection;
-                
+                if (postagemCollection == null)
+                    throw new KeyNotFoundException();
+
+                return Request.CreateResponse(HttpStatusCode.OK, postagemCollection);
+            }
+            catch (KeyNotFoundException)
+            {
+                string mensagem = "Não foi encontrado itens na consulta";
+                HttpError error = new HttpError(mensagem);
+                return Request.CreateErrorResponse(HttpStatusCode.NotFound, error);
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro no processo de consulta.", ex);
-            }            
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex);
+            }
         }
-                
-        public Postagem Get(string id)
+        
+        public HttpResponseMessage Get(string id)
         {
             try
             {
                 Postagem postagem = this._postagemApp.GetById(id);
-                return postagem;
+                if (postagem == null)
+                    throw new KeyNotFoundException();
+
+                return Request.CreateResponse(HttpStatusCode.OK, postagem);
             }
-            catch (ApplicationException ex)
+            catch (KeyNotFoundException)
             {
-                throw ex;
+                string mensagem = string.Format("O item {0} não foi encontrado.", id);
+                HttpError error = new HttpError(mensagem);
+                return Request.CreateErrorResponse(HttpStatusCode.NotFound, error);
             }
             catch (Exception ex)
-            {
-                throw new Exception("Erro no processo de consulta.", ex);
-            }            
+            {   
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex);
+            }
         }
                 
-        public Postagem Post([FromUri] Postagem value)
+        public HttpResponseMessage Post([FromBody] Postagem postagem)
         {
+            HttpResponseMessage response = null;
             try
             {
-                if (value == null)
-                    throw new Exception("Parâmetro de entrada inválido nulo.");
+                if (postagem == null)
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
 
-                this._postagemApp.IsValid(value);
-                this._postagemApp.Add(value);
-                return value;
+                this._postagemApp.IsValid(postagem);
+                this._postagemApp.Add(postagem);
+                
+                response = Request.CreateResponse(HttpStatusCode.Created);
             }
             catch (Exception ex)
             {
-                throw ex;
+                response = Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex);
             }
+
+            return response;
         }
                 
         public HttpResponseMessage Put([FromUri] Postagem value)
@@ -82,8 +98,29 @@ namespace Blog.API.Controllers
             }
         }
                 
-        public void Delete(int id)
+        public void Delete(string id)
         {
+            try
+            {
+                if (string.IsNullOrEmpty(id))
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+
+                var postagem = this._postagemApp.GetById(id);
+                if (postagem == null)
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+
+                this._postagemApp.Remove(postagem);
+            }
+            catch (HttpResponseException ex)
+            {
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                throw new HttpResponseException(HttpStatusCode.InternalServerError);
+            }
         }
+
+
     }
 }

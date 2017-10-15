@@ -17,6 +17,5 @@ D:\ProjetosGit\BlogPostagens\Blog.Domain\bin\Debug\System.Runtime.InteropService
 D:\ProjetosGit\BlogPostagens\Blog.Domain\bin\Debug\MongoDB.Bson.xml
 D:\ProjetosGit\BlogPostagens\Blog.Domain\bin\Debug\MongoDB.Driver.xml
 D:\ProjetosGit\BlogPostagens\Blog.Domain\bin\Debug\MongoDB.Driver.Core.xml
-D:\ProjetosGit\BlogPostagens\Blog.Domain\obj\Debug\Blog.Domain.csprojResolveAssemblyReference.cache
 D:\ProjetosGit\BlogPostagens\Blog.Domain\obj\Debug\Blog.Domain.dll
 D:\ProjetosGit\BlogPostagens\Blog.Domain\obj\Debug\Blog.Domain.pdb

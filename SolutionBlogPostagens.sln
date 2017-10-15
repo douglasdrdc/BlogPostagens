@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blog.Domain", "Blog.Domain", "{6B4F4CB6-324A-4654-B09A-1A19F9AE87A8}"
 EndProject
@@ -20,6 +20,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.API", "Blog.API\Blog.API.csproj", "{FA14694E-75EA-4008-9F88-925A85E37B77}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.API.Tests", "Blog.API.Tests\Blog.API.Tests.csproj", "{949B477F-BAA3-4C5C-87C8-49A7DF13166B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blog.MVC", "Blog.MVC", "{7389E41F-B51C-45AE-938A-DA178C053DB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.WebMVC", "Blog.WebMVC\Blog.WebMVC.csproj", "{F5BABFB2-4AEE-4711-84D3-ECA3FD377EC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +51,10 @@ Global
 		{949B477F-BAA3-4C5C-87C8-49A7DF13166B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{949B477F-BAA3-4C5C-87C8-49A7DF13166B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{949B477F-BAA3-4C5C-87C8-49A7DF13166B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5BABFB2-4AEE-4711-84D3-ECA3FD377EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5BABFB2-4AEE-4711-84D3-ECA3FD377EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5BABFB2-4AEE-4711-84D3-ECA3FD377EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5BABFB2-4AEE-4711-84D3-ECA3FD377EC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +65,6 @@ Global
 		{AE013CD8-35B2-4245-965D-E7120A11C40F} = {9A7081C9-F944-40AF-9995-9228E1CF64A2}
 		{FA14694E-75EA-4008-9F88-925A85E37B77} = {251ACB69-BC97-42B4-9C19-80922F92EBC2}
 		{949B477F-BAA3-4C5C-87C8-49A7DF13166B} = {251ACB69-BC97-42B4-9C19-80922F92EBC2}
+		{F5BABFB2-4AEE-4711-84D3-ECA3FD377EC1} = {7389E41F-B51C-45AE-938A-DA178C053DB0}
 	EndGlobalSection
 EndGlobal
